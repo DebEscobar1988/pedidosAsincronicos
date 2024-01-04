@@ -90,16 +90,18 @@ const moviesAPIController = {
                     meta: {
                         status: 200,
                         total: confirm.length,
-                        url: 'api/movies/create'
+                        url: 'api/movies/create',
+                        message :'Pelicula agregada con éxito'
                     },
                     data:confirm
                 }
             }else{
                 respuesta ={
                     meta: {
-                        status: 200,
+                        status: 500,
                         total: confirm.length,
-                        url: 'api/movies/create'
+                        url: 'api/movies/create',
+                        message :'Error al agregar una película'
                     },
                     data:confirm
                 }
@@ -131,7 +133,8 @@ const moviesAPIController = {
                     meta: {
                         status: 200,
                         total: confirm.length,
-                        url: 'api/movies/:id'
+                        url: 'api/movies/:id',
+                        message : 'Película actualizada con éxito'
                     },
                     data:confirm
                 }
@@ -140,7 +143,8 @@ const moviesAPIController = {
                     meta: {
                         status: 204,
                         total: confirm.length,
-                        url: 'api/movies/update/:id'
+                        url: 'api/movies/update/:id',
+                        message :'No se hicieron cambios'
                     },
                     data:confirm
                 }
