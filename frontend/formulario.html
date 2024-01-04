@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Dosis:400,700"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -20,7 +21,7 @@
         </div>
         <div>
             <label for="rating">Calificación </label>
-            <p><input type="number"name="rating" id="rating" required></p>
+            <p><input type="number" step="0.01" name="rating" id="rating" required></p>
         </div>
         <div>
         <label for="awards">Premios </label>
@@ -37,9 +38,9 @@
         
         <br>
         <div class="action">
-            <button type="submit" class="botonAgregar" >Editar</button>
-            <button class="botonAgregar">Crear</button>
-            <button class="botonBorrar">Eliminar</button>
+            <button type="submit" class="botonAgregar" >Actualizar Pelicula</button>
+            <button type="button" id="btn-add" class="botonAgregar">Crear</button>
+            <button type="button"  id="btn-delete"  class="botonBorrar">Eliminar</button>
         </div>
     </form>
     <script src="js/formulario.js"></script>

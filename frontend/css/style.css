@@ -44,6 +44,7 @@ p {
 .card {
   margin: 1rem;
   background: white;
+  height:600px ;
   box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
   border-radius: 12px;
   overflow: hidden;
@@ -87,6 +88,23 @@ p {
 input, select{
   width: 60%;
   height: 25px;
+}
+.botonAgregarStart{
+  padding: 15px;
+  background-color: #1ccbd4aa;
+  border-radius: 10px;
+  position: relative;
+  left: 200px;
+}
+.botonEditar{
+  color: #e671ce;
+  font-family: sans-serif;
+  font-size:20px;
+  font-weight: 900;
+  padding-left: 15px;
+}
+.botonEditar:hover{
+  color: #0ec4e9;
 }
 
 @media screen and (min-width: 600px) {

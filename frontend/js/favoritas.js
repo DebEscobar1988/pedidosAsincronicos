@@ -1,17 +1,14 @@
-window.onload = () => {
+window.onload = async () => {
   const app = document.getElementById("root");
   const container = document.createElement("div");
   container.setAttribute("class", "container");
   app.appendChild(container);
 
   // Aqui debemos agregar nuestro fetch
+const peliculasFavoritasRecuperadas = JSON.parse(sessionStorage.getItem('peliculasFavoritas')) || [];
+console.log(peliculasFavoritasRecuperadas);
 
-
-
-  /** Codigo que debemos usar para mostrar los datos en el frontend
-    let data = peliculas.data;
-
-    data.forEach((movie) => {
+    peliculasFavoritasRecuperadas.forEach((movie) => {
       const card = document.createElement("div");
       card.setAttribute("class", "card");
 
@@ -34,5 +31,5 @@ window.onload = () => {
       }
       card.appendChild(duracion);
     });
-  */
+  
 };
